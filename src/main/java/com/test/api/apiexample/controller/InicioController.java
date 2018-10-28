@@ -19,6 +19,6 @@ public class InicioController {
     @GetMapping
     public ResponseEntity sayHello(){
         log.info("Respondemos!");
-        return ResponseEntity.ok("Hola a todos"+environment.getActiveProfiles().toString());
+        return ResponseEntity.ok("Hola a todos"+environment.getActiveProfiles()[0]);
     }
 }
